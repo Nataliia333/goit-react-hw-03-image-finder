@@ -1,19 +1,3 @@
-Установка зависимостей
-Установить в проект следующие пакеты.
+Напиши приложение поиска изображений по ключевому слову. Превью рабочего приложения смотри по ссылке.
 
-npm install --save-dev prettier husky lint-staged
-Интерграция плагинов
-Ссылки на документацию по интеграции плагинов в популярные редакторы.
-
-Prettier editor integration
-ESLint editor integration
-Настройки VSCode
-Для комфортной работы, после установки плагинов, нужно добавить несколько настроек редактора для автосохранения и форматирования файлов.
-
-{
-  "files.autoSave": "onFocusChange",
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
-  }
-}
+Создай компоненты <Searchbar>, <ImageGallery>, <ImageGalleryItem>, <Loader>, <Button> и <Modal>. Готовые стили компонентов можно взять в файле styles.css и подправить под себя, если необходимо.

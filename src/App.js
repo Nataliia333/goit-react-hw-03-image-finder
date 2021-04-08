@@ -3,7 +3,7 @@ import imagesApi from './services/apiService';
 import SearchBar from './components/Searchbar/Searchbar';
 import ImageGallery from './components/ImageGallery/ImageGallery';
 import Button from './components/Button/Button';
-// import Loader from './components/Loader/Loader';
+import Loader from './components/Loader/Loader';
 import Modal from './components/Modal/Modal';
 import './App.css';
 
@@ -78,7 +78,7 @@ class App extends Component {
           images={this.state.images}
           onImageClick={this.handleImageClick}
         />
-        {/* {this.state.isLoading && <Loader />} */}
+        {this.state.isLoading && <Loader />}
         {this.onLoadMoreButtonShow() && !this.state.isLoading && (
           <Button onSubmit={this.fetchImages} />
         )}

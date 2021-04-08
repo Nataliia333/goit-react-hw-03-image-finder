@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import styles from './ImageGalleryItem.module.css';
 
 class ImageGalleryItem extends Component {
   render() {
@@ -7,8 +9,8 @@ class ImageGalleryItem extends Component {
         <img
           src={this.props.imageURL}
           alt=""
-          className="ImageGalleryItem-image"
-          data-large-image={this.props.largeImage}
+          className={styles.ImageGalleryItem_image}
+          id={this.props.id}
         />
       </li>
     );
@@ -16,3 +18,8 @@ class ImageGalleryItem extends Component {
 }
 
 export default ImageGalleryItem;
+
+ImageGalleryItem.propTypes = {
+  imageURL: PropTypes.string.isRequired,
+  id: PropTypes.number.isRequired,
+};
